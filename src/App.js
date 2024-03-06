@@ -1,10 +1,12 @@
-import Container from "./Container/Container";
+import Container from "components/Container/Container";
+import Navbar from "components/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="container">
+    <>
+      <Navbar />
       <Container />
-    </div>
+    </>
   );
 }
 

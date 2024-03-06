@@ -1,0 +1,89 @@
+@import "styles/breakpoints.scss";
+
+.navBar {
+  height: 50px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--main-font-color);
+}
+
+.navName {
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-background);
+
+  padding: 20px 0;
+
+  position: fixed;
+  top: 45px;
+  right: -100%;
+
+  transition: right 0.4s;
+
+  @include media(">=laptop") {
+    position: initial;
+    padding: 0;
+  }
+}
+
+.showMenu {
+  right: 0;
+}
+
+.navButton {
+  font-size: 20px;
+  font-weight: 400;
+
+  @include media(">=laptop") {
+    display: none;
+  }
+}
+
+.navList {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+
+  @include media(">=laptop") {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 25px;
+  }
+}
+
+.navListItem {
+  margin: 20px 0;
+
+  @include media(">=laptop") {
+    margin: 0;
+  }
+}
+
+.navOption {
+  padding: 20px;
+
+  @include media(">=laptop") {
+    transition: 0.4s;
+
+    &:hover {
+      background-color: var(--main-font-color);
+      color: var(--main-background);
+      font-weight: 700;
+      // border: 2px solid var(--main-font-color);
+    }
+  }
+}
