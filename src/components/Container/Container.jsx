@@ -5,10 +5,13 @@ const Container = () => {
   return (
     <section>
       <div className={styles.homeBackground}>
-        <div className={clsx("container")}>
-          <h1 className={styles.homeTitle}>
-            I design and create web applications. Simple, yet elegant
-          </h1>
+        <div className={styles.homeLanding}>
+          <div className={clsx("container")}>
+            <h1 className={styles.homeTitle}>
+              I design and create web applications. Simple, yet elegant
+            </h1>
+            <h3>Welcome to my domain</h3>
+          </div>
         </div>
       </div>
     </section>
