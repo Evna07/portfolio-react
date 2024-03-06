@@ -1,8 +1,8 @@
-import styles from "./Container.module.scss";
+import clsx from "clsx";
 
 const Container = () => {
   return (
-    <section className={styles.container}>
+    <section className={clsx("container")}>
       <h1>I design and create web applications. Simple, yet elegant</h1>
     </section>
   );
