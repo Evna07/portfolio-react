@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { navOptions } from "data/navOptions";
 import styles from "./Navbar.module.scss";
-import { TfiClose } from "react-icons/tfi";
-import { CiMenuBurger } from "react-icons/ci";
+// import { TfiClose } from "react-icons/tfi";
+// import { CiMenuBurger } from "react-icons/ci";
+import { Squeeze as Hamburger } from "hamburger-react";
 import clsx from "clsx";
 import { v4 as uuidv4 } from "uuid";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -41,7 +43,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className={styles.navButton} onClick={toggleMenu}>
-        {showMenu ? <TfiClose /> : <CiMenuBurger />}
+        <Hamburger toggled={isOpen} toggle={setOpen} size={20} />
       </div>
     </nav>
   );
