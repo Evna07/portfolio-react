@@ -17,6 +17,8 @@ body {
   background-color: var(--main-background);
   color: var(--main-font-color);
   font-family: "Poiret One", sans-serif;
+
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -59,7 +61,7 @@ h1,
 h2,
 .h2 {
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 600;
 
   @include media(">=laptop") {
     font-size: 26px;
@@ -85,7 +87,7 @@ h4,
 p,
 .p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 p.small {

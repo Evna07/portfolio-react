@@ -3,7 +3,7 @@ import styles from "./Container.module.scss";
 
 const Container = () => {
   return (
-    <section>
+    <section id="home">
       <div className={styles.homeBackground}>
         <div className={styles.homeLanding}>
           <div className={clsx("container")}>

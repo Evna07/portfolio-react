@@ -13,12 +13,7 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
-  };
-
-  const closeMenuOnMobile = () => {
-    if (window.innerWidth <= 1024) {
-      setShowMenu(false);
-    }
+    setOpen(!isOpen);
   };
 
   return (
@@ -33,7 +28,7 @@ const Navbar = () => {
                   styles.navOption,
                   option.isScroll ? styles.enabledLink : styles.disabledLink
                 )}
-                onClick={closeMenuOnMobile}
+                onClick={toggleMenu}
                 href={option.path}
               >
                 {option.name}
@@ -43,7 +38,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className={styles.navButton} onClick={toggleMenu}>
-        <Hamburger toggled={isOpen} toggle={setOpen} size={20} />
+        <Hamburger
+          size={20}
+          label="Show menu"
+          toggled={isOpen}
+          toggle={setOpen}
+        />
       </div>
     </nav>
   );
