@@ -2,3 +2,21 @@
   background-color: #fff6cc;
   color: #333;
 }
+
+.profileAvatar {
+  background-color: var(--main-background);
+  border-radius: 50%;
+  height: 221px;
+  width: 221px;
+
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.profilePicture {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}

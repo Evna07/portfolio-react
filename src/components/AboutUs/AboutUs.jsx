@@ -5,7 +5,14 @@ const AboutUs = () => {
   return (
     <section id="aboutUs" className={styles.aboutUsContainer}>
       <div className={clsx("container")}>
-        <h2>My name is Daria...</h2>
+        <div className={styles.profileAvatar}>
+          <img
+            className={styles.profilePicture}
+            src="https://avatars.githubusercontent.com/u/85988106?v=4"
+            alt="My person"
+          />
+        </div>
+        <h2>My name is Daria</h2>
         <p>
           I am an energetic and detail-oriented IT student looking for a job in
           a company where I could use my skills in solving complex problems,

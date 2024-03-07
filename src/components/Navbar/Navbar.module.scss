@@ -4,7 +4,7 @@
   height: 50px;
   width: 100%;
   margin: 0 auto;
-  padding: 20px 8px;
+  padding: 20px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,7 +12,14 @@
   top: 0;
 
   background-color: var(--main-background);
-  color: var(--main-font-color);
+
+  /* From https://css.glass */
+  // background: rgba(15, 28, 37, 0.7);
+  // border-radius: 16px;
+  // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  // backdrop-filter: blur(5px);
+  // -webkit-backdrop-filter: blur(5px);
+  // border: 1px solid rgba(15, 28, 37, 0.3);
 
   @include media(">=laptop") {
     width: 960px;
@@ -29,8 +36,9 @@
   width: 100%;
   background-image: linear-gradient(
     to right,
-    rgba(15, 28, 37, 0),
-    rgba(15, 28, 37, 0.85),
+    rgba(255, 255, 255, 0),
+    rgba(15, 28, 37, 0.15),
+    rgba(15, 28, 37, 0.75),
     rgba(15, 28, 37, 1)
   );
 
@@ -43,6 +51,7 @@
   transition: right 0.4s;
 
   @include media(">=laptop") {
+    background-image: none;
     position: initial;
     padding: 0;
     height: auto;
