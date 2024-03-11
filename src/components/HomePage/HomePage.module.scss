@@ -1,0 +1,31 @@
+@import "styles/breakpoints.scss";
+
+.homeContainer {
+  height: 100vh;
+  color: var(--main-font-color);
+
+  background-image: url("./../../assets/back1.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.backgroundContainer {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 40px;
+}
+
+.homepageTitle {
+  width: 65%;
+}
