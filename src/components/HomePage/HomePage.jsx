@@ -2,7 +2,7 @@ import styles from "./HomePage.module.scss";
 
 const HomePage = () => {
   return (
-    <section className={styles.homeContainer}>
+    <section id="home" className={styles.homeContainer}>
       <div className={styles.backgroundContainer}>
         <div className="container">
           <div className={styles.homeIntro}>

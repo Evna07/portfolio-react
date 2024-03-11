@@ -2,4 +2,11 @@
 
 .footer {
   padding: 30px 0;
+
+  background-color: var(--main-font-color);
+  color: var(--main-background);
+
+  @include media(">=laptop") {
+    padding: 20px 0;
+  }
 }

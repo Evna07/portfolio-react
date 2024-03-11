@@ -8,9 +8,7 @@ const Projects = () => {
   return (
     <section id="projects" className={styles.projectsContainer}>
       <div className={clsx("container", styles.projectsWrapper)}>
-        <h1 className={styles.projectTitle}>
-          Here you can check out my latest projects
-        </h1>
+        <h1 className={styles.projectTitle}>Check out my latest projects</h1>
         <ul className={styles.projectList}>
           {projectItems.map((item) => (
             <ProjectItem key={nanoid()} item={item} />
