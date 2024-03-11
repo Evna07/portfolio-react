@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navBar}>
-      <p className={styles.navName}>Daria P Grabowska</p>
+      <span className={styles.navName}>Daria P Grabowska</span>
       <div className={clsx(styles.menu, showMenu && styles.showMenu)}>
         <ul className={styles.navList}>
           {navOptions.map((option) => (
