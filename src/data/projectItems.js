@@ -1,6 +1,6 @@
 export const projectItems = [
   {
-    name: "Generic Business Responsive Webpage",
+    name: "Generic Business Responsive Webpage (PL)",
     url: "https://candid-basbousa-1916ac.netlify.app/",
     isNew: true,
   },

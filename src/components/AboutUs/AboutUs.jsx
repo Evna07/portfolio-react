@@ -12,7 +12,7 @@ const AboutUs = () => {
             alt="My person"
           />
         </div>
-        <h1 className={styles.aboutUsTitle}>My name is Daria</h1>
+        <h1 className={styles.aboutUsTitle}>My name is Daria Paulina</h1>
         <div className={styles.aboutUsDescription}>
           <p>
             I am an energetic and detail-oriented IT student looking for a job
@@ -21,7 +21,7 @@ const AboutUs = () => {
             creating documentation.
           </p>
           <p>
-            I'm currently enrolled in IT (Frontend Developer) University Course
+            I'm currently enrolled in IT (Frontend Developer) University classes
             and work on my personal projects, as well as building from grounds
             up a project for book shop application backed with database info.
           </p>

@@ -8,10 +8,18 @@ const Footer = () => {
         <h4>Daria Paulina Grabowska - all rights reserved, 2024</h4>
 
         <div className={styles.footerLinksContainer}>
-          <a className={styles.footerLink} href="google.com">
+          <a
+            className={styles.footerLink}
+            href="https://www.linkedin.com/in/daria-grabowska-96a765177/"
+            target="blank"
+          >
             <BsLinkedin />
           </a>
-          <a className={styles.footerLink} href="google.com">
+          <a
+            className={styles.footerLink}
+            href="https://github.com/Evna07"
+            target="blank"
+          >
             <BsGithub />
           </a>
         </div>
