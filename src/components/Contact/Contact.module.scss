@@ -1,0 +1,85 @@
+@import "styles/breakpoints.scss";
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+      45deg,
+      #0000 calc(25% / 3),
+      #1f2927 0 calc(50% / 3),
+      #0000 0 calc(250% / 3),
+      #1f2927 0 calc(275% / 3),
+      #0000 0
+    ),
+    linear-gradient(
+      45deg,
+      #1f2927 calc(25% / 3),
+      #0000 0 calc(50% / 3),
+      #1f2927 0 25%,
+      #0000 0 75%,
+      #1f2927 0 calc(250% / 3),
+      #0000 0 calc(275% / 3),
+      #1f2927 0
+    ),
+    linear-gradient(
+      -45deg,
+      #0000 calc(25% / 3),
+      #1f2927 0 calc(50% / 3),
+      #0000 0 calc(250% / 3),
+      #1f2927 0 calc(275% / 3),
+      #0000 0
+    ),
+    linear-gradient(
+        -45deg,
+        #1f2927 calc(25% / 3),
+        #0000 0 calc(50% / 3),
+        #1f2927 0 25%,
+        #0000 0 75%,
+        #1f2927 0 calc(250% / 3),
+        #0000 0 calc(275% / 3),
+        #1f2927 0
+      )
+      #fff6cc;
+  background-size: 106px 106px;
+  background-position: 0 0, 53px 53px;
+
+  color: #333;
+}
+
+.contactForm {
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  margin: 20px 0;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
+
+  @include media(">=laptop") {
+    width: 62%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.contactFields {
+  display: flex;
+  flex-direction: column;
+
+  @include media(">=laptop") {
+    width: 45%;
+  }
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+}

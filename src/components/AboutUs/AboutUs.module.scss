@@ -41,7 +41,9 @@
   text-align: justify;
   text-justify: inter-word;
 
+  width: 92%;
+
   @include media(">=laptop") {
-    width: 65%;
+    width: 960px;
   }
 }

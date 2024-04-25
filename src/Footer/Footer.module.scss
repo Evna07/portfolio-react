@@ -20,18 +20,19 @@
 }
 
 .footerContainer {
-  padding: 0 8px;
+  // padding: 0 8px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 960px;
+  width: 92%;
   gap: 20px;
 
   @include media(">=laptop") {
     flex-direction: row;
     justify-content: space-between;
+    width: 960px;
   }
 }
 
